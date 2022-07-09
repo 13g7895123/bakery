@@ -8,3 +8,11 @@ body {
     height: 127px;
     background-color: rgb(255, 236, 129);
 }
+
+.nav_bar_main {
+    width: 1024px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: #fff; */
+}

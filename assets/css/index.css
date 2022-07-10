@@ -1,18 +1,104 @@
+* {
+    /* border: 1px solid #000; */
+    font-family: '微軟正黑體';
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 html,
 body {
     margin: 0;
+    background-color: #f1f0f0;
 }
 
 .nav_bar {
     width: 100%;
-    height: 127px;
-    background-color: rgb(255, 236, 129);
+    /* height: 127px; */
+    background-color: #e9e4c2;
 }
 
 .nav_bar_main {
-    width: 1024px;
-    height: 100%;
+    max-width: 1024px;
+    /* height: 100%; */
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
     /* background-color: #fff; */
+}
+
+.nav_left {
+    cursor: pointer;
+}
+
+.content {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.block {
+    width: 256px;
+    margin: 20px;
+    background-color: rgb(255, 255, 255);
+    /* height: 210px; */
+}
+
+.block:hover .add_cart {
+    bottom: 15px;
+    opacity: 0.9;
+}
+
+.block:hover img {
+    transform: scale(1.1);
+}
+
+.bakery_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.bakery_img img {
+    transition-duration: 0.5s;
+}
+
+.add_cart {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    background-color: #363748;
+    color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.fa-cart-shopping {
+    font-size: 20px;
+    padding: 2px;
+    margin-right: 15px;
+}
+
+
+.bakery_name,
+.bakery_price {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:768px) {
+    /* .block {
+        width: 50%;
+    } */
 }

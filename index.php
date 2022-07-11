@@ -114,4 +114,6 @@
     </div>
 </div>
 <div class='foot_bar'></div>
+<div class='side_bar'></div>
+<div class='dialog_block'></div>
 

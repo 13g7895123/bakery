@@ -38,7 +38,8 @@ body {
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .block {
@@ -89,13 +90,14 @@ body {
     margin-right: 15px;
 }
 
-
 .bakery_name,
 .bakery_price {
     text-align: center;
     font-size: 18px;
     margin-top: 5px;
 }
+
+.dialog_block {}
 
 @media screen and (max-width:768px) {
     /* .block {
